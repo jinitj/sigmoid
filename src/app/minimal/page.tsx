@@ -1,12 +1,10 @@
 import { Button } from "../../components/ui/button";
 import { SparklesCore } from "../../../components/ui/sparkles";
 
-// Helper function to get correct asset paths for both local and GitHub Pages
+// Helper function to get correct asset paths
 const getAssetPath = (path: string) => {
-  // For GitHub Pages deployment, we need to prepend /sigmoid
-  // Since this is a static export, we need to handle the basePath manually
-  const basePath = process.env.NODE_ENV === 'production' ? '/sigmoid' : '';
-  return `${basePath}${path}`;
+  // With custom domain, we don't need basePath
+  return path;
 };
 
 export default function MinimalPage() {

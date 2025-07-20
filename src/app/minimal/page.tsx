@@ -1,6 +1,13 @@
 import { Button } from "../../components/ui/button";
 import { SparklesCore } from "../../../components/ui/sparkles";
 
+// Helper function to get correct asset paths for both local and GitHub Pages
+const getAssetPath = (path: string) => {
+  // For GitHub Pages deployment, we need to prepend /sigmoid
+  // This will be handled by the basePath in next.config.pages.ts during build
+  return path;
+};
+
 export default function MinimalPage() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -29,7 +36,7 @@ export default function MinimalPage() {
                   loop 
                   playsInline
                 >
-                  <source src="/IndiaAd1.mp4" type="video/mp4" />
+                  <source src={getAssetPath("/IndiaAd1.mp4")} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -37,7 +44,7 @@ export default function MinimalPage() {
               {/* India Ad 2 - Image */}
               <div className="w-56 h-84 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd2.jpeg" 
+                  src={getAssetPath("/IndiaAd2.jpeg")} 
                   alt="India Advertising Campaign 2" 
                   className="w-full h-full object-cover"
                 />
@@ -46,7 +53,7 @@ export default function MinimalPage() {
               {/* India Ad 3 - Image */}
               <div className="w-72 h-108 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd3.png" 
+                  src={getAssetPath("/IndiaAd3.png")} 
                   alt="India Advertising Campaign 3" 
                   className="w-full h-full object-cover"
                 />
@@ -55,7 +62,7 @@ export default function MinimalPage() {
               {/* India Ad 4 - Image */}
               <div className="w-60 h-90 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd4.png" 
+                  src={getAssetPath("/IndiaAd4.png")} 
                   alt="India Advertising Campaign 4" 
                   className="w-full h-full object-cover"
                 />
@@ -64,7 +71,7 @@ export default function MinimalPage() {
               {/* Repeat for more frames */}
               <div className="w-68 h-102 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd2.jpeg" 
+                  src={getAssetPath("/IndiaAd2.jpeg")} 
                   alt="India Advertising Campaign 2" 
                   className="w-full h-full object-cover"
                 />
@@ -72,7 +79,7 @@ export default function MinimalPage() {
               
               <div className="w-64 h-96 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd3.png" 
+                  src={getAssetPath("/IndiaAd3.png")} 
                   alt="India Advertising Campaign 3" 
                   className="w-full h-full object-cover"
                 />
@@ -90,7 +97,7 @@ export default function MinimalPage() {
                   loop 
                   playsInline
                 >
-                  <source src="/IndiaAd1.mp4" type="video/mp4" />
+                  <source src={getAssetPath("/IndiaAd1.mp4")} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -98,7 +105,7 @@ export default function MinimalPage() {
               {/* India Ad 2 - Image */}
               <div className="w-56 h-84 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd2.jpeg" 
+                  src={getAssetPath("/IndiaAd2.jpeg")} 
                   alt="India Advertising Campaign 2" 
                   className="w-full h-full object-cover"
                 />
@@ -107,7 +114,7 @@ export default function MinimalPage() {
               {/* India Ad 3 - Image */}
               <div className="w-72 h-108 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd3.png" 
+                  src={getAssetPath("/IndiaAd3.png")} 
                   alt="India Advertising Campaign 3" 
                   className="w-full h-full object-cover"
                 />
@@ -116,7 +123,7 @@ export default function MinimalPage() {
               {/* India Ad 4 - Image */}
               <div className="w-60 h-90 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd4.png" 
+                  src={getAssetPath("/IndiaAd4.png")} 
                   alt="India Advertising Campaign 4" 
                   className="w-full h-full object-cover"
                 />
@@ -125,7 +132,7 @@ export default function MinimalPage() {
               {/* Repeat for more frames */}
               <div className="w-68 h-102 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd2.jpeg" 
+                  src={getAssetPath("/IndiaAd2.jpeg")} 
                   alt="India Advertising Campaign 2" 
                   className="w-full h-full object-cover"
                 />
@@ -133,7 +140,7 @@ export default function MinimalPage() {
               
               <div className="w-64 h-96 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
                 <img 
-                  src="/IndiaAd3.png" 
+                  src={getAssetPath("/IndiaAd3.png")} 
                   alt="India Advertising Campaign 3" 
                   className="w-full h-full object-cover"
                 />
@@ -242,7 +249,7 @@ export default function MinimalPage() {
                   loop 
                   playsInline
                 >
-                  <source src="/videdo1.mp4" type="video/mp4" />
+                  <source src={getAssetPath("/videdo1.mp4")} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -257,7 +264,7 @@ export default function MinimalPage() {
             <div className="relative order-2 md:order-1">
               <div className="aspect-square bg-black rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/smallBig2.webp" 
+                  src={getAssetPath("/smallBig2.webp")} 
                   alt="Small Big Visual" 
                   className="w-full h-full object-cover object-bottom-left"
                 />
@@ -297,7 +304,7 @@ export default function MinimalPage() {
                   loop 
                   playsInline
                 >
-                  <source src="/IndiaAd1.mp4" type="video/mp4" />
+                  <source src={getAssetPath("/IndiaAd1.mp4")} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -308,7 +315,7 @@ export default function MinimalPage() {
             <div className="space-y-4">
               <div className="aspect-[3/4] bg-black rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/IndiaAd2.jpeg" 
+                  src={getAssetPath("/IndiaAd2.jpeg")} 
                   alt="India Advertising Campaign 2" 
                   className="w-full h-full object-cover"
                 />
@@ -320,7 +327,7 @@ export default function MinimalPage() {
             <div className="space-y-4">
               <div className="aspect-[3/4] bg-black rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/IndiaAd3.png" 
+                  src={getAssetPath("/IndiaAd3.png")} 
                   alt="India Advertising Campaign 3" 
                   className="w-full h-full object-cover"
                 />

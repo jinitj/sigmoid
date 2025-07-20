@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Ensure static assets are served correctly
+  experimental: {
+    outputFileTracingRoot: process.cwd(),
+  },
 };
 
 export default nextConfig; 

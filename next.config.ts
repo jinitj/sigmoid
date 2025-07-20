@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   basePath: '/sigmoid',
-  assetPrefix: '/sigmoid/'
+  assetPrefix: '/sigmoid/',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

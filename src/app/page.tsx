@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SparklesPreview from "../../components/sparkles-demo";
 import { Button } from "../components/ui/button";
 import ServicesFeatures from "../../components/services-features";

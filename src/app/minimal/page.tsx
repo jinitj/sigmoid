@@ -1,5 +1,4 @@
 import { Button } from "../../components/ui/button";
-import SparklesPreview from "../../../components/sparkles-demo";
 import { SparklesCore } from "../../../components/ui/sparkles";
 
 export default function MinimalPage() {
@@ -150,13 +149,13 @@ export default function MinimalPage() {
         <div className="relative z-10 max-w-4xl mx-auto space-y-12">
           <div className="space-y-6">
             <p className="text-gray-300 text-xl leading-relaxed">
-              if you're building something that matters, we want to help you tell that story.
+              if you&apos;re building something that matters, we want to help you tell that story.
               <br />
-              come, tell us about what you're building and we will ask you:
+              come, tell us about what you&apos;re building and we will ask you:
             </p>
             
             <h2 className="text-3xl md:text-5xl font-light italic text-white leading-tight">
-              "why restrict the creative you?"
+              &ldquo;why restrict the creative you?&rdquo;
             </h2>
           </div>
           
@@ -224,7 +223,7 @@ export default function MinimalPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="space-y-6">
               <p className="text-gray-400 text-lg leading-relaxed">
-                we don't just run campaigns. we think about your entire growth engine.
+                we don&apos;t just run campaigns. we think about your entire growth engine.
                 <br /><br />
                 from the moment someone discovers your brand to the point they become 
                 a loyal customer, we optimize every touchpoint.
@@ -267,7 +266,7 @@ export default function MinimalPage() {
             
             <div className="space-y-6 order-1 md:order-2">
               <p className="text-gray-400 text-lg leading-relaxed">
-                every startup is different. that's why we don't believe in one-size-fits-all solutions.
+                every startup is different. that&apos;s why we don&apos;t believe in one-size-fits-all solutions.
                 <br /><br />
                 we take the time to understand your unique challenges, market position, 
                 and growth goals before crafting a strategy that actually works.
@@ -339,7 +338,7 @@ export default function MinimalPage() {
           <h2 className="text-lg font-light text-gray-400 mb-8">ready to be our first success story?</h2>
           
           <p className="text-gray-500 text-sm mb-12 max-w-2xl mx-auto">
-            we're building something extraordinary and looking for ambitious founders 
+            we&apos;re building something extraordinary and looking for ambitious founders 
             who want to be part of our journey from the beginning.
           </p>
           
@@ -357,7 +356,7 @@ export default function MinimalPage() {
           
           <div className="mt-8">
             <p className="text-gray-500 text-xs italic">
-              these aren't development mistakes — they're placeholders for our next clients. let's grow together.
+              these aren&apos;t development mistakes — they&apos;re placeholders for our next clients. let&apos;s grow together.
             </p>
           </div>
         </div>
@@ -374,7 +373,7 @@ export default function MinimalPage() {
               startups scale sustainably. our approach combines data-driven strategies with 
               creative storytelling, driving not just awareness, but revenue and retention. 
               we wanted to do more, but the traditional agency model felt limiting. 
-              we didn't like constraints.
+              we didn&apos;t like constraints.
             </p>
             
             <p className="text-gray-400 text-lg leading-relaxed">
@@ -384,7 +383,7 @@ export default function MinimalPage() {
             </p>
             
             <p className="text-gray-400 text-lg leading-relaxed">
-              today, we're building the future of startup growth. one extraordinary 
+              today, we&apos;re building the future of startup growth. one extraordinary 
               company at a time.
             </p>
           </div>

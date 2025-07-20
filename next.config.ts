@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/sigmoid',
+  assetPrefix: '/sigmoid/'
 };
 
 export default nextConfig;

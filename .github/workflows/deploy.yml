@@ -24,7 +24,9 @@ jobs:
       run: npm ci
       
     - name: Build
-      run: npx next build --config next.config.pages.ts
+      run: |
+        cp next.config.pages.ts next.config.ts
+        npm run build
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

@@ -4,8 +4,9 @@ import { SparklesCore } from "../../../components/ui/sparkles";
 // Helper function to get correct asset paths for both local and GitHub Pages
 const getAssetPath = (path: string) => {
   // For GitHub Pages deployment, we need to prepend /sigmoid
-  // This will be handled by the basePath in next.config.pages.ts during build
-  return path;
+  // Since this is a static export, we need to handle the basePath manually
+  const basePath = process.env.NODE_ENV === 'production' ? '/sigmoid' : '';
+  return `${basePath}${path}`;
 };
 
 export default function MinimalPage() {

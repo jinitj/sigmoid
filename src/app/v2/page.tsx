@@ -1,6 +1,7 @@
 import SparklesPreview from "../../../components/sparkles-demo";
 import { Button } from "../../components/ui/button";
 import ServicesFeatures from "../../../components/services-features";
+import Link from "next/link";
 
 export default function V2Page() {
   return (
@@ -20,7 +21,13 @@ export default function V2Page() {
             </nav>
             <div className="flex items-center space-x-4">
               <span className="text-white text-sm">+91 98765 43210</span>
-              <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">Free Strategy Call</Button>
+              <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                >
+                  Free Strategy Call
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -36,7 +43,13 @@ export default function V2Page() {
             Strategy-first, performance-driven marketing that scales your business from startup to industry leader
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-3 px-8">Book Free Consultation</Button>
+            <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-3 px-8"
+              >
+                Book Free Consultation
+              </Button>
+            </Link>
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-3 px-8">View Our Work</Button>
           </div>
         </div>
@@ -288,8 +301,21 @@ export default function V2Page() {
             Join 200+ startups that have transformed their growth with Sigmoid&apos;s data-driven marketing strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-4 px-8">Start Your Growth Journey</Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-8">Schedule Free Consultation</Button>
+            <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-4 px-8"
+              >
+                Start Your Growth Journey
+              </Button>
+            </Link>
+            <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-black text-lg py-4 px-8"
+              >
+                Schedule Free Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

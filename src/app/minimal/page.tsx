@@ -1,5 +1,6 @@
 import { Button } from "../../components/ui/button";
 import { SparklesCore } from "../../../components/ui/sparkles";
+import Link from "next/link";
 
 // Helper function to get correct asset paths
 const getAssetPath = (path: string) => {
@@ -165,12 +166,14 @@ export default function MinimalPage() {
             </h2>
           </div>
           
-          <Button 
-            variant="outline" 
-            className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100 mt-12"
-          >
-            Let's Talk
-          </Button>
+          <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+            <Button 
+              variant="outline" 
+              className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100 mt-12"
+            >
+              Let's Talk
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -188,12 +191,14 @@ export default function MinimalPage() {
               comprehensive growth marketing solutions for ambitious companies
             </p>
             
-            <Button 
-              variant="outline" 
-              className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100"
-            >
-              Schedule a Call
-            </Button>
+            <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100"
+              >
+                Schedule a Call
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -425,12 +430,14 @@ export default function MinimalPage() {
           </div>
           
           <div className="relative z-20 mt-8">
-            <Button 
-              variant="outline" 
-              className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100"
-            >
-              Let's Talk
-            </Button>
+            <Link href="https://calendly.com/sjinobs2811/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                className="bg-white text-black border-white text-lg py-6 px-12 rounded-full hover:bg-gray-100"
+              >
+                Let's Talk
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
